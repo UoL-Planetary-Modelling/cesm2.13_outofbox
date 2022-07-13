@@ -1,6 +1,6 @@
 # WACCMX_metal_ion_transport_SMax
 - Source code and required input files for the WACCMX Solar Maximum run with metal_ion_transport
-- SourceMods, input files and env_build are the same for SMin and SMax runs, differences in user_nl_cam 
+- SourceMods, input files and env_build are the same for SMin and SMax runs, differences in user_nl_cam:
   - SMin date for solar data files = 2008-11-01
     - Solar parameters are:
       - f107 = 65.6
