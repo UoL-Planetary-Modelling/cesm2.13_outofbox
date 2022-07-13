@@ -11,7 +11,7 @@ Source code and required input files for the WACCMX Solar Minimum run with metal
 ## Case Directory located at:
 /home/home02/sestay/cesm_prep/cesm213_MIon_SMin_FX2000_f19f19mg16_2/
 
-## /bld/ and /run/ folders located at:
+## bld/ and run/ folders located at:
 /nobackup/sestay/cesm_sims/cesm213_MIon_SMin_FX2000_f19f19mg16_2/
 
 ## File archive located at:
