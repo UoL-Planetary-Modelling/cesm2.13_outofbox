@@ -8,10 +8,11 @@
       - kp = 0.625
       - ap = 2.75
   - SMax date for solar data files = 2001-11-01
-    - f107 = 232
-    - f107a = 215.9605
-    - kp = 3.3875
-    - ap = 24.125
+    - Solar parameters are:
+      - f107 = 232
+      - f107a = 215.9605
+      - kp = 3.3875
+      - ap = 24.125
                    
 ## Contents
 - SourceMods/src.cam/ folder
