@@ -1,0 +1,33 @@
+! Users should add all user specific namelist changes below in the form of 
+! namelist_var = new_namelist_value 
+&cam_history_nl
+ avgflag_pertape                = 'A', 'I'
+  fincl1 = 'PS','T','Z3','U','V','OMEGA', 'O','O2','O3','H', 'H2O', 'O2_1D', 'OH', 'e','Op','Np','N2p','NOp','O2p', 'H2','HO2','CO2','NO', 'NO2', 'SZA', 'Fe', 'FeO','FeO2', 'FeO3', 'FeO2H2', 'Fe2O2H2','FeOH', 'Fep', 'FeOp', 'FeO2p', 'FeN2p','Na', 'NaO', 'NaO2', 'NaOH', 'NaHCO3', 'Nap', 'NaOp', 'NaN2p', 'NaCO2p', 'NaH2Op','Mg', 'MgO', 'MgO2', 'MgO2H2', 'Mg2O4H4', 'MgO3', 'MgCO3', 'MgO4', 'MgOH', 'Mgp', 'MgOp', 'MgO2p', 'MgH2Op', 'MgN2p', 'MgCO2p','EDens','ElecColDens','NMF2','HMF2','MgpDens','FepDens','NapDens','OpDens','Fep_Xi','Mgp_Xi','Nap_Xi','OPLUS_BZ','OPLUS_HJ','HMF2','NMF2','OPLUS_BMAG','ED1','ED2','PHIM2D','TIon','UI','VI','WI','QJOULE','ALATM','ALONM', 'T_08_COS', 'T_08_SIN', 'T_12_COS', 'T_12_SIN', 'T_24_COS', 'T_24_SIN', 'U_12_COS', 'U_12_SIN', 'U_24_COS', 'U_24_SIN', 'V_12_COS', 'V_12_SIN', 'V_24_COS', 'V_24_SIN', 'OMEGA_12_COS', 'OMEGA_12_SIN', 'OMEGA_24_COS', 'OMEGA_24_SIN'  
+  fincl2 = 'PS','T','Z3','U','V','OMEGA', 'O','O2','O3','H', 'H2O', 'O2_1D', 'OH', 'e','Op','Np','N2p','NOp','O2p', 'H2','HO2','CO2','NO', 'NO2', 'SZA', 'Fe', 'FeO','FeO2', 'FeO3', 'FeO2H2', 'Fe2O2H2','FeOH', 'Fep', 'FeOp', 'FeO2p', 'FeN2p','Na', 'NaO', 'NaO2', 'NaOH', 'NaHCO3', 'Nap', 'NaOp', 'NaN2p', 'NaCO2p', 'NaH2Op',,'Mg', 'MgO', 'MgO2', 'MgO2H2', 'Mg2O4H4', 'MgO3', 'MgCO3', 'MgO4', 'MgOH', 'Mgp', 'MgOp', 'MgO2p', 'MgH2Op', 'MgN2p', 'MgCO2p','EDens','ElecColDens','MgpDens','FepDens','NapDens','OpDens','OPLUS_BZ','OPLUS_HJ','HMF2','NMF2','OPLUS_BMAG','ED1','ED2','PHIM2D','TIon','UI','VI','WI','QJOULE','ALATM','ALONM'
+  fincl3 =' ' 
+  fincl4 =' '
+  fincl5 =' '
+  fincl6 =' '
+  fincl7 =' '
+! Monthly avg & hourly inst (24h per file)
+ mfilt          =              1,  24
+ nhtfrq         =             0,   -1 
+/
+&chem_inparm
+ ext_frc_cycle_yr               = 2000
+ ext_frc_specifier              = 'NO2 -> /home/home02/sestay/WACCM_Input_Files/acp-21-15619-2021/CCMI_emissions_aircraft_NO2_1850-2100_1.9x2.5_c130314.nc',
+         'Fe -> /home/home02/sestay/WACCM_Input_Files/acp-21-15619-2021/jd_grl55292_2016_FeMIF_divd5_FSDW5_23Aug2018.nc',
+         'Mg -> /home/home02/sestay/WACCM_Input_Files/acp-21-15619-2021/jd_grl55292_2016_MgMIF_divd5_FSDW5_15May2019.nc',
+         'Na -> /home/home02/sestay/WACCM_Input_Files/acp-21-15619-2021/jd_grl55292_2016_NaMIF_divd5_FSDW5.nc',
+ ext_frc_type           = 'CYCLICAL'
+/
+&cam_initfiles_nl
+ ncdata         = '/home/home02/sestay/WACCM_Input_Files/acp-21-15619-2021/new_Na_Fe_Mg_Si_K_Ca_f.c54137.FX2000climo.f19_f19.ZGTest.001.cam.i.0002-01-01-00000_c170817.nc'
+/
+&solar_data_opts
+ solar_data_type                = 'FIXED'
+solar_data_ymd         = 20081101
+ solar_htng_spctrl_scl          = .true.
+ solar_irrad_data_file          = '/home/home02/sestay/WACCM_Input_Files/spectral_irradiance_Lean_1950-2014_daily_GOME-Mg_Leap_c150623.nc'
+solar_parms_data_file          = '/home/home02/sestay/WACCM_Input_Files/SolarParmsEPP_CMIP6_daily_s18491230_e20150101_c190109.nc'
+/
