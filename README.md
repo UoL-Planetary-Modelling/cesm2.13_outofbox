@@ -16,3 +16,6 @@ Source code and required input files for the WACCMX Solar Minimum run with metal
 
 ## File archive located at:
 /nobackup/sestay/cesm_sims/archive/cesm213_MIon_SMin_FX2000_f19f19mg16_2/
+
+## Input files located at:
+/home/home02/sestay/WACCM_Input_Files/
