@@ -1,5 +1,5 @@
 # WACCMX_metal_ion_transport_SMax
-- Source code and required input files for the WACCMX Solar Maximum run with metal_ion_transport
+- Source code and required input files for the WACCMX Solar Maximum run with metal_ion_transport (Case name: cesm213_MIon_SMax_FX2000_f19f19mg16_2)
 - SourceMods, input files and env_build are the same for SMin and SMax runs, differences in user_nl_cam:
   - SMin date for solar data files = 2008-11-01
     - Solar parameters are:
