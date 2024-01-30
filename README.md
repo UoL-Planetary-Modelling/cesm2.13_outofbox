@@ -2,7 +2,7 @@
 How to run a 5 day 'out of the box' test simulation using CESM2.13 on arc4 - model version ported by Wuhu Feng (w.feng@ncas.ac.uk)
 
 ## Configuration 
-- First you need to configure the environment for running the model - i.e. set up environment variables, load modules, link input data directories. You can do this by adding this information to your .bashrc file, which provides settings to be executed when a user starts an interactive shell session
+- First you need to configure the environment for running the model - i.e. set up environment variables, load modules, link input data directories. You can do this by adding this information to your .bashrc file, which provides settings to be executed when a user starts an interactive shell session:
 `vi ~/.bashrc`
 - Press 'i' to enter insert mode and paste in the following:
 ```
@@ -58,7 +58,7 @@ fi
 `./case.setup`
 
 ## Build the model
-./case.build --skip-provenance-check
+`./case.build --skip-provenance-check`
 
 ## Submit the run
 - Create a submission script in the case directory
