@@ -48,7 +48,7 @@ fi
 - Create a new folder to host your case directories:
 `mkdir /nobackup/$USER/cesm2/cases`
 
--	Set up a new case – this is an out of the box 5 day test run using cesm 2.13 compset FX2000 (WACCM-X perpetual year 2000) with 1.9x2.5degree resultion. Other compsets are available as detailed on the You can change the case name (CESM213_FX2000_f19_f19_mg16_arc4) to something descriptive:
+-	Set up a new case – this is an out of the box 5 day test run using cesm 2.13 compset FX2000 (WACCM-X perpetual year 2000) with 1.9x2.5degree resultion. Other compsets are available as detailed on the [UCAR website](https://docs.cesm.ucar.edu/models/cesm2/config/2.1.3/compsets.html#www2). You can change the case name (CESM213_FX2000_f19_f19_mg16_arc4) to something descriptive:
 `/home/home01/earfw/release_cesm2_1_3/cime/scripts/create_newcase --case /nobackup/$USER/cesm2/cases/CESM213_FX2000_f19_f19_mg16_arc4 --compset FX2000 --res f19_f19_mg16 --machine arc4 --run-unsupported`
 
 - Change to the case directory:
