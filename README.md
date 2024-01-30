@@ -48,7 +48,7 @@ fi
 - Create a new folder to host your case directories:
 `mkdir /nobackup/$USER/cesm2/cases`
 
--	Set up a new case – this is an out of the box 5 day test run using cesm 2.13 compset FX2000 (WACCM-X perpetual year 2000) with 1.9x2.5degree resultion. You can change the case name (CESM213_FX2000_f19_f19_mg16_arc4) to something descriptive
+-	Set up a new case – this is an out of the box 5 day test run using cesm 2.13 compset FX2000 (WACCM-X perpetual year 2000) with 1.9x2.5degree resultion. Other compsets are available as detailed on the You can change the case name (CESM213_FX2000_f19_f19_mg16_arc4) to something descriptive:
 `/home/home01/earfw/release_cesm2_1_3/cime/scripts/create_newcase --case /nobackup/$USER/cesm2/cases/CESM213_FX2000_f19_f19_mg16_arc4 --compset FX2000 --res f19_f19_mg16 --machine arc4 --run-unsupported`
 
 - Change to the case directory:
@@ -61,7 +61,7 @@ fi
 `./case.build --skip-provenance-check`
 
 ## Submit the run
-- Create a submission script in the case directory
+- Create a submission script in the case directory:
 `vi /nobackup/$USER/cesm2/cases/CESM213_FX2000_f19_f19_mg16_arc4/submission_script.sh`
 - Press 'i' to enter insert mode and paste in the following:
 ```
@@ -85,11 +85,13 @@ cd /home/home02/sestay/cesm_prep/test_FX2000_f19f19
 python case.submit
 ######################################################################
 ```
-- Press ':wq' to save and exit
+- Press `:wq` to save and exit
 - N.B. you can change the line `#$ -l np=40` to `#$ -pe ib 40`. The latter will use the available shared resources from arc4 which can reduce the queueing time, but sometimes the model occasional crashing due to the shared available memory.
 
 - Submit the job:
 `qsub -cwd submission_script.sh` 
 
-
+##Further Documentation
+- Further documentation on running CESM on arc4 is available here (https://cesm2-arc4-rtd.readthedocs.io/en/latest/index.html), though please note some info is specifically for using the CEMAC-ported model version
+- General documentation on use of arc4 can be found [here](https://arcdocs.leeds.ac.uk/systems/arc4.html)
 
