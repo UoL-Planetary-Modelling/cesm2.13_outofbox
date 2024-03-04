@@ -36,7 +36,7 @@
 2) create a new case (for example specified-version of WACCM-D at 1 degree).
 
 >
-    /home/home01/earfw/release_cesm2_1_3/cime/scripts/create_newcase  --case /nobackup/$USER/cesm2/cases/f.e213.FWmadSD.f09_f09_mg17 --compset FWmadSD --res f09_f09_mg17 --machine arc4 --run-unsupported 
+    /home/home01/earfw/release_cesm2_1_3//cime/scripts/create_newcase  --case /nobackup/$USER/cesm2/cases/f.e213.FWmadSD.f09_f09_mg17 --compset FWmadSD --res f09_f09_mg17 --machine arc4 --run-unsupported 
 
 3) access the case directory:
 >
