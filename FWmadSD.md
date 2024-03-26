@@ -43,11 +43,11 @@
     cd /nobackup/$USER/cesm2/cases/f.e213.FWmadSD.f09_f09_mg17
 
 4) Note the default simulation uses 160 cores, this can be changed either by xmlchange command or manually changes for the env_mach_pes.xml, for example, 1 node (40 cores), 2 nodes (80 cores).
-Here just gives one example using 1 dedicate planet node:
+Here just gives one example using 2 FEPS nodes:
 
-Method 1: ./xmlchange NTASKS=-1
+Method 1: ./xmlchange NTASKS=-2
 
-Method 2: vi env_mach_pes.xml, then change -4 to -1.
+Method 2: vi env_mach_pes.xml, then change -4 to -2.
 
 5) set up the case:
 >
@@ -83,9 +83,9 @@ Method 2: vi env_mach_pes.xml, then change -4 to -1.
     #$ -cwd
     #$ -l h_rt=48:00:00
     #$ -j y
-    #$ -P planet
+    #$ -P feps-cpu
     #$ -l h_vmem=4G
-    #$ -l np=40
+    #$ -l np=80
 
     cd /nobackup/$USER/cesm2/cases/f.e213.FWmadSD.f09_f09_mg17
     python case.submit
@@ -96,3 +96,11 @@ Method 2: vi env_mach_pes.xml, then change -4 to -1.
 
 
 11) If 5-day runs successful, then do the continous run following NCAR CESM instruction....
+
+## Cost estimates:
+>
+    pe count for cost estimate : 80
+    Overall Metrics: 
+    Model Cost:            8653.90   pe-hrs/simulated_year 
+    Model Throughput:         0.22   simulated_years/day 
+
