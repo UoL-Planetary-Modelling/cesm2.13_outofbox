@@ -132,7 +132,7 @@
     </entry>
   </group>
   <group id="build_def">
-    <entry id="CIME_OUTPUT_ROOT" value="/nobackup/sestay/cesm_sims">
+    <entry id="CIME_OUTPUT_ROOT" value="/nobackup/sestay/cesm2/cases">
       <type>char</type>
       <valid_values/>
       <desc>Output root directory for each machine.
@@ -237,7 +237,7 @@
     Set in $CIMEROOT/machines/config_machines.xml for each supported machine.
     Must be explicitly set in env_build.xml for userdefined machine.</desc>
     </entry>
-    <entry id="MPILIB" value="intelmpi">
+    <entry id="MPILIB" value="openmpi">
       <type>char</type>
       <valid_values/>
       <desc>mpi library (must match one of the supported libraries) -
@@ -321,7 +321,7 @@
       <valid_values>eul,fv,se</valid_values>
       <desc>CAM dynamical core</desc>
     </entry>
-    <entry id="CAM_CONFIG_OPTS" value="-phys cam4 -waccmx -ionosphere wxie -chem waccm_ma -usr_mech_infile /home/home02/sestay/WACCM_Input_Files/acp-21-15619-2021/acp-21-15619-2021.in">
+    <entry id="CAM_CONFIG_OPTS" value="-phys cam4 -waccmx -ionosphere wxie -chem waccm_ma -usr_mech_infile /nobackup/earfw/acp-21-15619-2021/acp-21-15619-2021.in">
       <type>char</type>
       <valid_values/>
       <desc>
