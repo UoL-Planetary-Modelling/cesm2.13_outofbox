@@ -15,8 +15,7 @@
 #$ -l np=80
 # ----------------------------------------
 cd /nobackup/sestay/cesm2/cases/SMin_3M_FX2000_f19f19mg16/
-qsub -cwd SMin.run
-
+python case.submit
 
 
 
