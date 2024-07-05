@@ -26,7 +26,7 @@ Change to the case directory:
 
 **Case modifications**
 
-Next you want to copy in user_nl_cam, sourcemods, env_build and env_run and SMin_2.run files from github to your case directory. 
+Next you want to copy in user_nl_cam, sourcemods, env_build and env_run and SMin.run files from github to your case directory. 
 You can clone the online repo to the remote server (arc4) and then copy the files into the case directory from there. 
 
 `git clone https://github.com/UoL-Planetary-Modelling/cesm2.13/ [folder path to store repo on remote server]`
