@@ -30,7 +30,7 @@ N.B. this clones the entire repo
 `cp [folder path to store repo on remote server]/SMin.run /nobackup/$USER/cesm2/cases/f.e21.FWmadSD.f09_f09_mg17.2005-2020.002`
 
 
-Ensure links to input files in user_nl_cam are pointing to the right files. For the run I did, the files were stored here: /nobackup/sestay/WACCM_Input_Files/ but I have copied them to here /home/home02/sestay/WACCM_Input_Files/f.e21.FWmadSD.f09_f09_mg17.2005-2020.002/ to avoid deletion by arc /nobackup/
+Ensure links to input files in user_nl_cam are pointing to the right files. For the run I did, the files were stored here: /nobackup/sestay/WACCM_Input_Files/ but I have copied them to here /resstore/b0243/Data/Input_Files_f.e21.FWmadSD.f09_f09_mg17.2005-2020.002/ to avoid deletion by arc /nobackup/
 
   solar_irrad_data_file = '/nobackup/sestay/WACCM_Input_Files/SolarForcingNRLSSI2_daily_s18820101_e20201231_extended_c20210414.nc'
   solar_parms_data_file = '/nobackup/sestay/WACCM_Input_Files/SolarGeomag_s19491230_e20210411_c20210414.nc'
