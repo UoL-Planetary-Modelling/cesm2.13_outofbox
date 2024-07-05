@@ -19,6 +19,9 @@
 # File archive located at:
 /nobackup/sestay/cesm2/archive/SMax_3M_FX2000_f19f19mg16/
 
+# Solar max conditions are:
+- f10.7=200, f10.7a=200, kp=3.0, ap=15
+
 # User_nl_cam
 - SourceMods, and env_build/run are the same for SMin and SMax runs, differences in user_nl_cam:
 
