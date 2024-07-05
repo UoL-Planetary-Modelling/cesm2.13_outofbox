@@ -1,0 +1,58 @@
+! Users should add all user specific namelist changes below in the form of 
+! namelist_var = new_namelist_value 
+ 
+solar_irrad_data_file = '/nobackup/sestay/WACCM_Input_Files/SolarForcingNRLSSI2_daily_s18820101_e20201231_extended_c20210414.nc'
+solar_parms_data_file = '/nobackup/sestay/WACCM_Input_Files/SolarGeomag_s19491230_e20210411_c20210414.nc'
+epp_all_filepath      = '/nobackup/sestay/WACCM_Input_Files/SolarForcingCCMI2022REFD1_19491230-20200101_sumEPP_extended_c20210414.nc'
+!
+! family defs:
+ vmr_sums = 'POS_IONS = N2p + O2p + Np + Op + NOp + O4p + O2p + Hp_H2O + Hp_2H2O +',
+                  'Hp_3H2O + Hp_4H2O + Hp_5H2O + H3Op_OH + Hp_3N1 + Hp_4N1 +',
+                  'NOp_H2O + NOp_2H2O + NOp_3H2O + NOp_CO2 + NOp_N2',
+            'NEG_IONS = Om + O2m + O3m + O4m + CO3m + CO4m + NO2m + NO3m + OHm + HCO3m +',
+                  'CO3m_H2O + CO3m2H2O + NO2m_H2O + NO3m_H2O + NO3m2H2O +',
+                  'NO3mHNO3 + NO3m_HCL + CLm + CLOm + CLm_H2O + CLm_HCL'
+!
+! history file outputs:
+ empty_htapes = .true.
+ avgflag_pertape  = 'A', 'B', 'A', 'A', 'B', 'I',  'I',  'A'
+ mfilt            =  1,   1,  120,   1,   1, 720,  720,   73   
+ nhtfrq           =  0,   0,   -6,-120,-240,   1,    1, -240   
+
+!
+ fincl1 = 'PS', 'PSL', 'U', 'V', 'T', 'Z3', 'OMEGA', 'PHIS', 'CO2', 'CO', 'H2O', 
+          'O', 'O3', 'H', 'OH', 'HO2', 'NO', 'O2', 'NO2', 'CLOX', 'CLOY', 'BROX', 'HOX', 'NOX', 'NOY', 'TOTH',
+          'QRS_TOT', 'QCP', 'QJOULE', 'QTHERMAL', 'QRS_AUR', 'QRS_CO2NIR', 'QRS_EUV', 'QRL_TOT', 'QRLNLTE', 'QNO',
+          'DTCOND', 'DTV', 'DUV', 'DVV', 'DTCORE', 'EKGW', 'TREFHT', 'TTGW', 'UTGWORO', 'UTGWSPEC', 'BUTGWSPEC', 
+          'VERT', 'VTGWORO', 'VTGWSPEC', 'UI', 'VI', 'UIONTEND', 'VIONTEND', 
+           'VTHzm', 'UVzm', 'UWzm', 'Uzm', 'Vzm', 'Wzm', 'THzm'
+!
+ fincl2 = 'PS', 'PSL', 'U', 'V', 'T', 'Z3', 'OMEGA', 'PHIS', 'CO2', 'CO', 'H2O', 'O1D', 'N2D', 'O2_1D', 'O2_1S', 'e', 'POS_IONS', 'NEG_IONS', 'SZA',
+          'O', 'O3', 'H', 'OH', 'HO2', 'NO', 'O2', 'NO2', 'CLOX', 'CLOY', 'BROX', 'HOX', 'NOX', 'NOY', 'TOTH',
+          'QRS_TOT', 'QCP', 'QJOULE', 'QTHERMAL', 'QRS_AUR', 'QRS_CO2NIR', 'QRS_EUV', 'QRL_TOT', 'QRLNLTE', 'QNO',
+          'DTCOND', 'DTV', 'DUV', 'DVV', 'DTCORE', 'EKGW', 'TREFHT', 'TTGW', 'UTGWORO', 'UTGWSPEC', 'BUTGWSPEC', 'VERT', 'VTGWORO', 'VTGWSPEC',
+          'UI', 'VI', 'UIONTEND', 'VIONTEND'
+!
+ fincl4 = 'PS', 'PSL', 'U', 'V', 'T', 'Z3', 'PHIS', 
+          'T_24_COS', 'T_24_SIN', 'T_12_COS', 'T_12_SIN', 
+          'OMEGA_24_COS', 'OMEGA_24_SIN', 'OMEGA_12_COS', 'OMEGA_12_SIN', 
+          'U_24_COS','U_24_SIN', 'U_12_COS', 'U_12_SIN', 
+          'V_24_COS', 'V_24_SIN', 'V_12_COS', 'V_12_SIN', 
+          'PS_24_COS', 'PS_24_SIN', 'PS_12_COS', 'PS_12_SIN'
+!
+ fincl5 = 'e', 'POS_IONS', 'NEG_IONS', 'N2p', 'Np', 'Op', 'NOp', 'O4p', 'O2p', 
+          'Hp_H2O', 'Hp_2H2O', 'Hp_3H2O', 'Hp_4H2O', 'Hp_5H2O', 'H3Op_OH', 'Hp_3N1', 'Hp_4N1', 
+          'NOp_H2O', 'NOp_2H2O', 'NOp_3H2O', 'NOp_CO2', 'NOp_N2', 
+          'Om', 'O2m', 'O3m', 'O4m', 'CO3m', 'CO4m', 'NO2m', 'NO3m', 'OHm', 'HCO3m', 
+          'CO3m_H2O', 'CO3m2H2O', 'NO2m_H2O', 'NO3m_H2O', 'NO3m2H2O', 'NO3mHNO3', 'NO3m_HCL', 
+          'CLm', 'CLOm', 'CLm_H2O', 'CLm_HCL', 'SZA'
+!
+ fincl6 = 'e:I', 'POS_IONS:I', 'NEG_IONS:I', 'Z3:I', 'PS:I', 'U:I', 'V:I', 'T:I', 'OMEGA:I', 'SZA:I'
+ fincl6lonlat = '16e_69n', '13e_55n', '14e_62n'
+ !
+ fincl7 = 'e:I', 'POS_IONS:I', 'NEG_IONS:I', 'Z3:I', 'PS:I', 'U:I', 'V:I', 'T:I', 'OMEGA:I', 
+     'SZA:I', 'O:I', 'O2:I'
+ fincl7lonlat = '288e_43n', '295e_65s', '265e_75n', '213e_65n', '19e_67n'
+!
+ fincl8 = ' '
+!
