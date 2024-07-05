@@ -4,6 +4,7 @@
 `/home/home01/earfw/release_cesm2_1_3/cime/scripts/create_newcase --case /nobackup/$USER/cesm2/cases/SMax_3M_FX2000_f19f19mg16 --compset FX2000 --res f19_f19_mg16 --machine arc4 --run-unsupported`
 
 # Contents
+- HOW_TO_RUN file
 - SourceMods/src.cam/ folder
 - Chemistry input files
 - User_nl_cam
