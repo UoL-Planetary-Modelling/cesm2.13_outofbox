@@ -1,4 +1,4 @@
-# Instructions for running versions of CESM on Leeds ARC4
+# Instructions for running versions of CESM 2.13 on Leeds ARC4
 
 - Each file/case contains essential info on how to run the case. 
 - More detailed information can be found in the repo at General_Documentation/WACCM Guides & Tutorials/WACCM_Workflow.md [here](https://github.com/UoL-Planetary-Modelling/General_Documentation/blob/main/WACCM%20Guides%20%26%20Tutorials/WACCM_Workflow.md)
